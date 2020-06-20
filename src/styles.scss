@@ -1,0 +1,157 @@
+
+.bg-light {
+    background-color: #00BFFF !important;
+}
+
+ul li{
+  color: white;
+    font-weight: 900;
+    font-size: 25px;
+}
+ul li a{
+  color: white !important;
+}
+
+.custom-card-body{
+  background-color: antiquewhite !important;
+}
+.wave{
+  position: relative;
+  min-height: 100px ;
+}
+.card{
+  border: none !important;
+}
+
+.wave::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-repeat: repeat-x;
+  height: 10px;
+  background-size: 20px 20px;
+  background-image: radial-gradient(circle at 10px -5px, transparent 12px, white 13px);
+}
+.wave::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-repeat: repeat-x;
+  height: 15px;
+  background-size: 40px 20px;
+  background-image: radial-gradient(circle at 10px 15px, white 12px, transparent 13px);
+}
+.custom-list{
+  min-height: 400px;
+}
+
+.custom-card-warning{
+  background-color: antiquewhite !important;
+}
+
+
+.custom-card-success{
+  background-color: #d6e9c6 !important;
+}
+
+.element {
+  margin: auto;
+  height: 150px;
+  width: 150px;
+  margin: 0 auto;
+  animation: stretch 2s ease forwards;
+  animation-duration: 1.5s; 
+}
+
+
+
+.loading-wrapper {
+  animation: expaned 2s ease forwards;
+  margin:auto;
+  height:400px;
+  width:400px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+.progress {
+  height: 4px !important;
+}
+
+
+  .login-slide{
+    position:absolute;
+    animation:run 1s ease forwards;
+    animation-duration: 1s;
+  }     
+  
+  body{
+    overflow-x:hidden;
+  }
+  
+  .loading-row{
+    min-height: 76vh;
+  }
+  .x {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+ 
+  .form-content{
+    margin-top: 10%;
+    box-shadow: 2px 4px 8px gray!important;
+    border-radius: 4px;
+  }
+  .form-img{
+    width:24px;
+    height:24px;
+  }
+  .input-group-text{
+    background-color: white !important;
+  }
+
+  .form-logo{
+    width: 60px;
+    border-radius: 100%;
+  }
+
+  @keyframes stretch {
+    0% {
+      transform: scale(.2);
+    }
+    
+    100% {
+      transform: scale(1.2);
+    }
+  }
+
+  @keyframes run {
+    0% { left: 100%; opacity: 1;}
+    95%{ left:  0%;
+    opacity: 0;}
+}
+
+@keyframes expaned {
+  0% {
+    transform: scale(0);
+    border-radius: 100%;
+    background-color: #D3D3D3;
+    margin:auto;
+  }
+  100% {
+    transform: scale(1);
+    border-radius: 100%;
+    background-color: transparent;
+    //background-color: #D3D3D3;
+    margin:auto;
+  }
+}
